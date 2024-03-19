@@ -1,0 +1,959 @@
+
+.guzikikpodstrona1 :hover{
+    transform: translatex(-30%);
+    animation: buttonAnimation  7s ease-in-out; 
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;    
+    
+}
+
+
+
+
+@keyframes buttonAnimation {
+    0% {
+        transform: translate(0, 0) scale(1) rotateY(0deg);
+      }
+      25% {
+        transform: translate(-1rem, -1rem) scale(2) rotateY(360deg);
+      }
+      50% {
+        transform: translate(-1.5rem, -1.5rem) scale(3) rotateY(0deg);
+    }
+        75% {
+            transform: translate(0, 0) scale(1) rotateY(0deg);
+          }
+          100% {
+            transform: translate(-1rem, -1rem) scale(2) rotateY(360deg);
+          
+      }
+  }
+
+
+
+body{
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url(pxfuel1.jpg);}
+
+.logo_sponsora  {
+    max-width: 100%; /* Ogranicza szerokość obrazu do 100% szerokości jego kontenera */
+    height: auto; /* Zachowuje proporcje obrazu */
+    
+}
+.logo_sponsora:hover{
+    opacity: 70%;
+    transition: 0.3s;
+}
+
+/*----------------------------------------------------------------------------------------------Logo sponsorow*/
+
+.navbar{
+    display: flex;
+    background-image: url(pxfuel2.jpg);  
+    position: sticky;
+    z-index: 999;
+    top: 0.0001px;
+    width: 100vw;
+    height: 7.5vh;
+    border-bottom:rgb(242, 206, 144) 1px solid;    
+}
+
+.navbar__kontener{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(63, 54, 1, 0.047); ;
+}
+
+
+
+.navbar__linki{
+    color: rgb(63, 54, 1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding:0 5rem;
+    height: 100%;   
+    font-size: calc(15px + 0.9vw);
+    text-decoration: none;
+}
+
+.navbar__linki img{
+    height: 100%;
+    width: auto;
+    border-radius: 10% ;
+}
+
+.navbar__linki:hover{
+    color:rgba(165, 42, 42, 0.375);
+    background-color: rgba(44, 16, 16, 0.319);
+    transition: 0.3s;
+    border-radius: 20%;
+}
+/*-----------------------------------------------------------------------------------------pasek nawigacyjny*/
+
+
+
+.lewy{  
+    margin-top:80px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-style: double;
+    border-width: 1px;
+    border-color:rgb(242, 206, 144);    ;
+    float: left;
+    height: 90vh;
+    width: 13vw;
+    overflow:scroll;
+    overflow-y:0px;
+    /* hide scrollbar ie firefox edge */
+    -ms-overflow-style: none;
+    overflow: -ms-autohiding-scrollbar;
+   
+}
+.lewy::-webkit-scrollbar{display: none;}
+
+
+.srodkowy{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 84vw;
+    height: 90vh;
+    
+}
+
+.tlo_srodkowy{
+    margin-top: 5vh;
+    position: absolute;
+    width: 80%;
+    height: 110%;
+    background-image: url(pxfuel2.jpg);  
+    opacity: 90%;
+    border-radius: 60px 0px 61px 0px;
+    -webkit-border-radius: 60px 0px 61px 0px;
+    -moz-border-radius: 60px 0px 61px 0px;
+    z-index: -1000;
+
+}
+
+.kontener_srodkowy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+    position: relative;
+    width: 80%;
+}
+
+.tekst_srodkowy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top:20px;
+    left: 5%;
+    width: 60vw; 
+    font-size: calc(15px + 0.9vw);
+    color:rgb(63, 54, 1);
+}
+
+.tekst_srodkowy p{
+    background-color: transparent;
+}
+
+.czasmija{
+    align-self: center ;
+    justify-self: center;
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+    color:rgb(63, 54, 1);
+    ;
+    font-size: 50px;
+    
+}
+
+
+
+
+
+/* -----------------------------------------------------------------------------------------------------------podstrona 1  */
+
+.main1{
+    margin-top: 2%;
+    position: relative;
+    left: 10%;
+    display: flex;
+    width: 80%;
+    height: 200vh;
+    text-align: center; 
+    flex-direction: column
+}
+
+.textpod1{  
+        width: 80vw;    
+        position: relative;
+        font-size:30px;
+        color: rgb(63, 54, 1);
+      
+        
+        
+}
+
+.tlo1_srodkowy{
+    z-index: -100;
+    margin-top: 5vh;
+    position: absolute;
+    width: 80%;
+    height: 200%;
+    left: 10%;
+    background-image: url(pxfuel2.jpg);  
+    opacity: 90%;
+    border-radius: 60px 0px 61px 0px;
+    -webkit-border-radius: 60px 0px 61px 0px;
+    -moz-border-radius: 60px 0px 61px 0px;
+}
+
+.slider-container {
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 0%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 2s;
+    aspect-ratio: 5/2.7;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slider-wrapper img {
+    width: 100%;
+    
+    height: auto;
+    display: block;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 5%;
+    font-size: 1.5em;
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.slider-container button:hover{
+    transform: scale(1.2);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* podstrona 2 ---------------------------------------------------*/
+
+.main2{
+    display: flex;    
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;  
+}
+
+.tlo3_srodkowy{
+    margin-top: 5vh;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 20%;
+    background-image: url(pxfuel2.jpg);  
+    opacity: 90%;
+    border-radius: 60px 0px 61px 0px;
+    -webkit-border-radius: 60px 0px 61px 0px;
+    -moz-border-radius: 60px 0px 61px 0px; 
+    z-index: -10;
+}
+.buttonstr2 {
+    background-color: rgb(82, 12, 12);
+    font-size: calc(100px + 0.9vw);
+    margin: 40px 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    position: relative;
+    top:50px;
+    left:50px;
+    
+}
+.wraperstr2{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+}
+
+#guzikkal{
+    width: 10%;
+    height: 5%;
+    background-color:antiquewhite;
+    color:#080808 ;
+}
+
+/*zegar -------------------------------------------------------*/
+#clockContainer {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-top:3%;
+    height: 40%;
+    /*to make the height and width responsive*/
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#clockContainer img{
+    position: relative;
+    max-height: 100%;;
+    width: auto; ;
+    z-index: -1;
+    
+}
+ 
+
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: black;
+    transform-origin:bottom ;   
+    border-radius: 50%;
+}
+ 
+#minute {
+    position: absolute;
+    width: 1.6%;
+    height: 40%;
+    top: 11%;
+    
+}
+ 
+#hour {
+    position: absolute;
+    width: 1.8%;
+    height: 25%;  
+    top: 25%;
+    left: 49.6%;
+}
+ 
+#second {
+    position: absolute;
+    top:10%;
+    width: 1%;
+    height: 40%;
+}
+ 
+
+/*sklep ---------------------------------------------------------------------------------------------*/
+
+.Sklep{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 170vh ;
+    
+}
+.kontenernaprodukty{
+         
+    width: 70%;
+    margin-top: 5%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 45% 45% ;
+    grid-template-rows:20% 20% 20% 20%  ; 
+    gap: 5%;
+}
+
+.prod1,.prod2,.prod3,.prod4,.prod5,.prod6,.prod7,.prod8{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    border: #080808 double;
+    display: grid;
+    grid-template-columns: 100%  ;
+     grid-template-rows: 25% 75%  ;
+     border-radius: 15%;
+background-image: url(pxfuel2.jpg);     gap: 5%;
+    margin:auto;
+    overflow: hidden;
+    
+
+}
+.prod1:hover,.prod2:hover,.prod3:hover,.prod4:hover,.prod5:hover,.prod6:hover,.prod7:hover,.prod8:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+    top: -15px;
+}
+
+
+.textWProd{
+    top: -10%;
+    position: relative;
+    text-align: center;
+    width:100%;
+    height: 100%;
+    font-style: italic;
+    font-size: calc(60px + 0.9vw);
+    color: rgb(242, 206, 144);
+    z-index: 20;
+    
+}
+.kontenerPodTrescProduktu{
+    display: grid;
+    grid-template-columns: 50% 50%  ;
+    grid-template-rows: 100%  ;
+    
+}
+.zdjecieDoProd{
+    position: relative;
+    align-items: center;
+    max-width:auto;
+    max-height: 100%;
+    
+}
+.zdjecieDoProd img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 10%;
+    
+}
+
+
+
+.cenaProducentKupTerazKontener{
+    display: grid;
+    grid-template-columns: 100%  ;
+    grid-template-rows: 30% 30% 30% ;
+}
+
+.Cena,.producent{
+height: 100%;
+width: 100%;
+display: grid;
+grid-template-columns: 50% 50%  ;
+grid-template-rows: 100% ;
+}
+.cenaWartosc,.cenaOpis,.producentWartosc,.producentOpis{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(15px + 0.9vw);
+}
+
+.producent{
+    height: 100%;
+    width: 100%;
+}
+
+.kupTeraz{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.kupTeraz button{
+    width: 80%;
+    height: 80%;
+    border-radius: 25%;
+    background-color: #a01717;
+    color: aqua;
+    border: #080808 dotted 5px; 
+}
+
+.kupTeraz button:hover{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    transition: 0.3s;
+}
+.tlo2_srodkowy{
+    margin-top: 5vh;
+    position: absolute;
+    width: 80%;
+    height: 180%;
+    background-image: url(pxfuel2.jpg);  
+    opacity: 5%;
+    border-radius: 60px 0px 61px 0px;
+    -webkit-border-radius: 60px 0px 61px 0px;
+    -moz-border-radius: 60px 0px 61px 0px; 
+    z-index: -10;
+}
+
+.main4{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:100% ;
+    grid-template-rows:10% 90% ;     align-items: center;
+    justify-content: center;
+}
+
+.kontenerNaTekstStr4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: rgb(213 160 84);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: calc(40px + 0.9vw);
+
+    
+}
+.kontenerNaPrzyciskiStr4{
+    display: flex;
+    flex-direction:column;
+    justify-content:top;
+    position: relative;
+    width:100%;
+    height:100%;
+    margin-top: 1%;
+    align-items: center;
+}
+
+
+
+.kontenerNaPrzyciskiStr4 button{
+    width: 90%;
+    height: 25%;
+    border: rgb(213 160 84) double;
+}
+
+#tekstPodPrzycisk2, #tekstPodPrzycisk1, #tekstPodPrzycisk3,#tekstPodPrzycisk4,#tekstPodPrzycisk5{
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-position-y: center;
+    display: none;
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+
+
+#tekstPodPrzycisk1{
+    
+    background-image:url("lokalizacja.png"); 
+
+}
+#tekstPodPrzycisk2{
+    background-image:url("kontakt.jpeg"); 
+
+}
+#tekstPodPrzycisk3{
+    background-image:url("KadraTrenerska.webp"); 
+
+}
+#tekstPodPrzycisk4{
+    height: 100vh;
+    background-image:url("kontaktpod4.jpg"); 
+
+}
+#tekstPodPrzycisk5{
+    height: 100vh;
+    background-image:url("godziny\ otwarcia\ \(1\).jpg"); 
+
+}
+
+
+.karaTrenerskaZawartosc{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100% ;
+}
+
+.pierwszyKadraTrenerska,.drugiKadraTrenerska,.trzeciKadraTrenerska,.czwartyKadraTrenerska,.piatyKadraTrenerska
+{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    row-gap: 10%  ;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 20%;
+    
+}
+.div1podkadratrenerska {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1podkadratrenerska img{
+    width: 70%;
+    height: auto;
+}
+.div2podkardatrenerska{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(8, 82, 82);
+    
+}
+.div2podkardatrenerska p{
+    color:rgb(57, 3, 38);
+    ;
+    font-size: calc(30px + 0.9vw);
+
+}
+
+
+
+
+
+#PrzyciskOdkrywajacyStr4Nr1{
+    color: azure;
+    background-image: url(localizacja11.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+
+    font-size:calc(30px + 0.9VW);
+    cursor: pointer;
+}
+
+#PrzyciskOdkrywajacyStr4Nr2{
+background-image:url(kontakt.jpg) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+
+    font-size:calc(30px + 0.9VW);
+    cursor: pointer;
+
+}
+
+#PrzyciskOdkrywajacyStr4Nr3{
+font-size:calc(30px + 0.9VW);
+background-image: url(trener.jpg    );
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+cursor: pointer;
+
+
+}
+
+#PrzyciskOdkrywajacyStr4Nr4{
+    font-size:calc(30px + 0.9VW);
+    background-image: url(formularz\ kontaktowy\ przycisk.jpg    );
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    cursor: pointer;
+    
+    
+    }
+
+#PrzyciskOdkrywajacyStr4Nr5{
+    background-image: url(pxfuel\ \(1\).jpg);
+    font-size:calc(30px + 0.7VW);
+    cursor: pointer;
+    color: #fff;    
+}
+
+.lokalizacjaZawartosc{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10% 10% 10%  10% 10%  10% 10% 10%  10% 10%;
+    grid-template-rows: 10% 10% 10%  10% 10%  10% 10% 10%  10% 10%;
+    row-gap: 2.9%;
+    
+}
+.a,.b,.c,.d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a{ 
+    grid-row: 1/5;
+    grid-column: 1/3;
+}
+.b{
+    grid-row: 5/9;
+    grid-column: 1/3;
+}
+.c{
+    grid-row: 5/9;
+    grid-column: 6/8;
+}
+.d{
+    grid-row: 1/5;
+    grid-column: 6/8;
+}
+.b img , .a img ,.c img,.d img{
+    height: 100%;
+    max-width: 80%;
+    max-height: 80%;
+}
+.t1{
+    grid-row: 1/5;
+    grid-column: 3/6;
+}
+.t2{
+    grid-row: 5/9;
+    grid-column: 3/6;
+}
+.t3{
+    grid-row: 5/9;
+    grid-column: 8/11;  
+}
+.t4{
+    grid-row: 1/5;
+    grid-column: 8/11;
+}
+.t1,.t2,.t3,.t4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(80px + 0.9vw);
+
+;
+}
+
+
+.trescPodSposobyKontaku{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%  ;
+    grid-template-rows: 100%;
+}
+
+
+.t11,.t12,.t13{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:50% 50%; 
+}
+
+
+
+.podTzdjecia{
+    width: 100%;
+    height: 100%;
+}
+.podTzdjecia img{
+    position: relative;
+    left: 35%;
+    height: 100%;
+    max-width: 100%;        
+    max-width: 100%;
+}
+.podTTekst{
+    font-size:calc(50px + 0.7VW);
+    text-align: center;
+    justify-content: center;
+}
+
+.guzikikpodstrona1 button{
+    color: rgb(63  ,54 , 1);
+    background-color: transparent;
+    border: none;
+    width: 40%;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 1%;
+}
+
+.zawartoscFormularzaKontaktowego{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.kontener1i2{
+    width:100%;
+    height: 30%;
+    display: flex;
+    
+}
+.pierwszyPodZawartosciaFormularzaKontaktowego{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(222, 168, 12);
+
+
+}
+
+.drugiPodZawartosciaFormularzaKontaktowego{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: rgb(222, 168, 12);
+
+    
+}
+.trzeciPodZawartosciaFormularzaKontaktowego{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        color: rgb(222, 168, 12);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+}
+.czwartyPodZawartosciaFormularzaKontaktowego{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;    
+   
+    
+}
+
+.inputyDoFormularza{
+    width: 80%;
+    height: 20%;
+    font-size:calc(30px + 0.7VW);
+
+    
+}
+.powiadomienieDoImputuDoFromularza{
+    width: 100%;
+    height: 100%;
+    font-size: calc(25px + 0.9vw);
+    display: flex;
+    justify-content: center;
+}
+
+.imputDoWiadomości{
+    margin-top: 2.5%;
+    width: 80%;
+    height: 40%;
+    font-size:calc(30px + 0.7VW);
+
+}
+
+.gozikpod4{
+    width: 100%;
+    height: 15%;
+    
+
+}
+.zawartoscFormularzaKontaktowego button{
+    background-image: url(pxfuel1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20%;
+    color: rgb(213 160 84);
+    height: 100%;
+    width: 20%;
+    position: relative;
+    left: 40%;
+    font-size:calc(10px + 0.7VW);
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+
+
+table {
+    border: 11px double rgb(50, 43, 1); 
+    border-collapse: collapse;
+    
+}
+tr,td{
+    border:1px solid black ; 
+    border-collapse: collapse;
+    padding-top: 10px;
+}
+
+.disf{
+    display:flex; justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
